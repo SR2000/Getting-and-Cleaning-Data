@@ -62,9 +62,9 @@ StandardDeviation, respectively
 ##POST SCRIPT TASKS
 ###Writing the table to a textfile
 * To write the table into a text file, the following command was run- 
-** write.table(dataMeanStd,file="dataMeanStd.txt",row.names=FALSE))
+* write.table(dataMeanStd,file="dataMeanStd.txt",row.names=FALSE))
 
 ###Reading the table into R
 * To read the table into R, the following steps were taken-
-** temp1<-read.table("dataMeanStd.txt", sep=" ")
-** Click on spreadsheet icon next to the file in the Global environment section and the data frame will show up in the window above the console 
+* temp1<-read.table("dataMeanStd.txt", sep=" ")
+* Click on spreadsheet icon next to the file in the Global environment section and the data frame will show up in the window above the console 
