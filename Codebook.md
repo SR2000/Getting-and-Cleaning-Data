@@ -16,7 +16,7 @@
 * Number of observations
 
 ##Numerical details of each variable
-* The details of the subject, activity and the 79 variables were broken down into sets of 1-20, 21-40, 41-60 and 61-81
+* The details of the subject, activity and the 79 measurement variables were broken down into sets of 1-20, 21-40, 41-60 and 61-81
 
 Variables 1-20,     180  Observations
 
