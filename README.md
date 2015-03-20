@@ -50,11 +50,11 @@ in their name were extracted
 ###Renaming the activity ids with their labels
 * The activity ids in the full table were renamed with their names as defined in "\ds3\UCI HAR Dataset\activity_labels.txt"
 
-###Full table column name changes and ensuring the full table has consistent data type
+###Modifying the columns names in the full table
 * Columns in the full table with Acc,Gyro,Freq and std in their names were expanded to Accelerometer,Gyroscope,Frequency &
 StandardDeviation, respectively
 * Upper case in the column names were not changed to lower case since the long names with the same lower case would be rather confusing
-* Column names carrying "-" and the symbol for parentheses were modified to not have them using grepl()
+* Column names carrying "-" and the symbol for parentheses were modified to remove them using grepl()
 
 ###Re-adding the subject & activity columns to the full table
 * Since the full table column name changes removed those columns not in the corresponding patterns, the subject-activity table had to be re-added to the full table
@@ -79,5 +79,5 @@ StandardDeviation, respectively
 
 ##ACKNOWLEDGEMENTS
 The data set used in the study was made possible by the following publication-
-* [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+* Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
