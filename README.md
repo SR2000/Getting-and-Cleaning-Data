@@ -54,7 +54,7 @@ in their name were extracted
 * Columns in the full table with Acc,Gyro,Freq and std in their names were expanded to Accelerometer,Gyroscope,Frequency &
 StandardDeviation, respectively
 * Upper case in the column names were not changed to lower case since the long names with the same lower case would be rather confusing
-* Column names carrying "-" and the symbol for parentheses were modified to remove them using grepl()
+* The parentheses symbol and "-" were removed from the full table column names using grepl()
 
 ###Re-adding the subject & activity columns to the full table
 * Since the full table column name changes removed those columns not in the corresponding patterns, the subject-activity table had to be re-added to the full table
