@@ -73,9 +73,10 @@ StandardDeviation, respectively
 * The text file was created in the working directory
 
 ###Reading the table into R
-* To read the table into R, the following steps were taken-
+* To read the table into R from the course evaluation page, the following steps were taken-
+* The file is opened in the "Preview" mode and saved from the internet into the working directory
 * The following command was run- dataMeanStdUploaded<-read.table("dataMeanStd.txt", sep=" ")
-* Click on spreadsheet icon next to the file in the Global environment section and the data frame will show up in the "script creation" window 
+* Click on spreadsheet icon next to the file name in the Global environment section and the data frame will show up in the "script creation" window 
 
 ##ACKNOWLEDGEMENTS
 The data set used in the study was made possible by the following publication-
