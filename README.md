@@ -18,8 +18,8 @@
 * The columns of the subject-activity(test) table and the test table were concatenated to form a single subject-activity-test table
 
 ###Creating the measurement table in the training set
-* The training set was read in from ""ds3/UCI HAR Dataset/train/X_train.txt"" and the rows bound to the test table
-* The column names for the training table was extracted from the measurement column name table
+* The training set was read in from ""ds3/UCI HAR Dataset/train/X_train.txt"" and the rows bound to the training table
+* The column names for the training table were extracted from the measurement column name table
 
 ###Creating subject-activity table in the training set
 * The subject(participants) and activity tables for the training set were created after reading from ds3/UCI HAR Dataset/train/subject_train.txt" and 
@@ -27,15 +27,15 @@
 * The columns of the 2 tables were concatenated to create the subject-activity table (columns= subject, activity) for the training set
 
 ###Creating the subject_activity-measurement table in the training set
-* The columns of the subject-activity(test) table and the test table were concatenated to form a single subject-activity-test table
+* The columns of the subject-activity(training) table and the training table were concatenated to form a single subject-activity-training table
 
 ###Creating the full table with the test & training sets
 * The rows of the test and the training tables, in that order, were concatenated to create the full table 
 
 ###Extracting the full table columns with mean and std in their names
-* All columns with mean and std in the full table were extracted using the grepl()and passing the required pattern
+* All columns with mean and std in the full table column names were extracted using grepl()and passing the required pattern
 * The columns were not restricted to only those names without parentheses but rather all columns having mean and std anywhere
-in their name
+in their name were extracted
 
 ###Renaming the activity ids with their labels
 * The activity ids in the full table were renamed with their names as defined in "\ds3\UCI HAR Dataset\activity_labels.txt"
@@ -54,10 +54,10 @@ StandardDeviation, respectively
 
 ###Looping through all subjects to create the dataMeanStd table with grouped means
 * The full table was broken into 30 subsets (for 30 subjects) and the column means for every activity for each subset was calculated using aggregate()
-* The resulting rows from the above activity were added to the new data frame, dataFinal
+* The resulting rows from the above activity were added to the new data frame, dataMeanStd
 
 ###Renaming the 2 columns in the dataMeanStd table used for grouping
-* The 2 columns in the dataMeanStd table used for grouping to determine the means were renamed to subject & activity
+* The 2 columns in the dataMeanStd table used for grouping to determine the means were renamed to subject & activity in that order
 
 ##POST SCRIPT TASKS
 ###Writing the table to a textfile
@@ -68,3 +68,8 @@ StandardDeviation, respectively
 * To read the table into R, the following steps were taken-
 * temp1<-read.table("dataMeanStd.txt", sep=" ")
 * Click on spreadsheet icon next to the file in the Global environment section and the data frame will show up in the window above the console 
+
+##ACKNOWLEDGEMENTS
+The data set used in the study was made possible by the following publication-
+* [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
