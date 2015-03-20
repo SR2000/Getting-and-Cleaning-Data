@@ -1,8 +1,8 @@
 ##ORIGINAL EXPERIMENT
-The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 subjects within an age bracket of 19-48 years, wearing a smartphone(Samsung Galaxy S II) on their waists. Gyroscope and acceleromter readings were taken while each subject was performing 6 activities(walking, walking upstairs, walking downstairs, sitting, standing and laying). A 561-feature vector with time and frequency domain variables for the measurements was created for every record in the table. The experiment divided the data collected into 2 data sets- training and test. 70 % of the subjects were placed in the training data set and the remaining 30 % in the test set
+The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 subjects within an age bracket of 19-48 years, wearing a smartphone(Samsung Galaxy S II) on their waists. Gyroscope and acceleromter readings were taken while each subject was performing 6 activities(walking, walking upstairs, walking downstairs, sitting, standing and laying). A 561-feature vector with time and frequency domain variables for the measurements was created for every record in the table. The experiment divided the data collected into 2 data sets- training and test. 70 % of the subjects were placed in the training data set and the remaining 30 % in the test set.
 
-##PROJECT REQUIREMENTS
-##A script, run_analysis.r was created that satisfied the following requirements.
+##PROJECT
+##A script, run_analysis.r was created that satisfied the following requirements-
 * Merges the test and training sets into one
 * Extracts only the mean and standard deviation for each measurement
 * Appropriately labels the column names and replace the activity ids with their descriptive names
