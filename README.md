@@ -65,16 +65,16 @@ StandardDeviation, respectively
 * The resulting rows from the above activity were added to the new data frame, dataMeanStd
 
 ###Renaming the 2 columns in the dataMeanStd table used for grouping
-* The 2 columns in the dataMeanStd table used for grouping to determine the means were renamed to subject & activity in that order
+* The 2 columns in the dataMeanStd table used for grouping to determine the means were renamed to subject & activity, in that order
 
 ##POST SCRIPT TASKS
 ###Writing the table to a textfile
 * To write the table into a text file, the following command was run- 
-* write.table(dataMeanStd,file="dataMeanStd.txt",row.names=FALSE))
+* write.table(dataMeanStd,file="dataMeanStd.txt",row.names=FALSE)
 
 ###Reading the table into R
 * To read the table into R, the following steps were taken-
-* temp1<-read.table("dataMeanStd.txt", sep=" ")
+* dataMeanStdUploaded<-read.table("dataMeanStd.txt", sep=" ")
 * Click on spreadsheet icon next to the file in the Global environment section and the data frame will show up in the window above the console 
 
 ##ACKNOWLEDGEMENTS
