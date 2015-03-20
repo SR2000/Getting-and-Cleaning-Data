@@ -21,7 +21,7 @@ The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 s
 * The column names for the test table was extracted from the measurement column name table
 
 ###Creating subject-activity table in the test set
-* The subject(participants) and activity tables for the test set were created after reading from "ds3/UCI HAR Dataset/test/subject_test.txt" and "ds3/UCI HAR Dataset/test/y_test.txt", respectively
+* The subject and activity tables for the test set were created after reading from "ds3/UCI HAR Dataset/test/subject_test.txt" and "ds3/UCI HAR Dataset/test/y_test.txt", respectively
 * The columns of the 2 tables were concatenated to create the subject-activity table (columns= subject, activity) for the test set
 
 ###Creating the subject_activity-measurement table in the test set
@@ -32,8 +32,7 @@ The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 s
 * The column names for the training table were extracted from the measurement column name table
 
 ###Creating subject-activity table in the training set
-* The subject(participants) and activity tables for the training set were created after reading from ds3/UCI HAR Dataset/train/subject_train.txt" and 
-"ds3/UCI HAR Dataset/train/y_train.txt", respectively
+* The subject and activity tables for the training set were created after reading from "ds3/UCI HAR Dataset/train/subject_train.txt" and "ds3/UCI HAR Dataset/train/y_train.txt", respectively
 * The columns of the 2 tables were concatenated to create the subject-activity table (columns= subject, activity) for the training set
 
 ###Creating the subject_activity-measurement table in the training set
@@ -43,7 +42,7 @@ The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 s
 * The rows of the test and the training tables, in that order, were concatenated to create the full table 
 
 ###Extracting the full table columns with mean and std in their names
-* All columns with mean and std in the full table column names were extracted using grepl()and passing the required pattern
+* All columns with mean and std in the full table column names were extracted using grepl() and passing the required pattern
 * The columns were not restricted to only those names without parentheses but rather all columns having mean and std anywhere
 in their name were extracted
 
