@@ -68,7 +68,7 @@ StandardDeviation, respectively
 * The 2 columns in the dataMeanStd table used for grouping to determine the means were renamed to subject & activity, in that order
 
 ##POST SCRIPT TASKS
-###Writing the table to a textfile
+###Writing the table to a text file
 * To write the table into a text file, the following command was run- 
 * write.table(dataMeanStd,file="dataMeanStd.txt",row.names=FALSE)
 
