@@ -75,7 +75,7 @@ StandardDeviation, respectively
 
 ###Reading the table into R
 * To read the table into R, the following steps were taken-
- dataMeanStdUploaded<-read.table("dataMeanStd.txt", sep=" ")
+* The following command was run- dataMeanStdUploaded<-read.table("dataMeanStd.txt", sep=" ")
 * Click on spreadsheet icon next to the file in the Global environment section and the data frame will show up in the "script creating" window 
 
 ##ACKNOWLEDGEMENTS
