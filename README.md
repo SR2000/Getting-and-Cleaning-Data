@@ -60,11 +60,11 @@ StandardDeviation, respectively
 * Since the full table column name changes removed those columns not in the corresponding patterns, the subject-activity table had to be re-added to the full table
 * All measurement value columns in the full table were ensured to be numeric
 
-###Looping through all subjects to create the dataMeanStd table with grouped means
+###Looping through all subjects to create the final table with grouped means
 * The full table was broken into 30 subsets (for 30 subjects) and the column means for every activity for each subset was calculated using aggregate()
 * The resulting rows from the above activity were added to the new data frame, dataMeanStd
 
-###Renaming the 2 columns in the dataMeanStd table used for grouping
+###Renaming the 2 columns in the final table used for grouping
 * The 2 columns in the dataMeanStd table used for grouping to determine the means were renamed to subject & activity, in that order
 
 ##POST SCRIPT TASKS
@@ -75,7 +75,7 @@ StandardDeviation, respectively
 ###Reading the table into R
 * To read the table into R, the following steps were taken-
 * dataMeanStdUploaded<-read.table("dataMeanStd.txt", sep=" ")
-* Click on spreadsheet icon next to the file in the Global environment section and the data frame will show up in the window above the console 
+* Click on spreadsheet icon next to the file in the Global environment section and the data frame will show up in the "script creating" window 
 
 ##ACKNOWLEDGEMENTS
 The data set used in the study was made possible by the following publication-
