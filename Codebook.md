@@ -8,7 +8,7 @@
 
 ##Values presented in the codebook for each measurement variable
 * Mean
-* Quantiles for probabilities of 0.05,0.10,0.25,0.50,0.75,0.90 & 0.95
+* Quantiles for probabilities of 0.05, 0.10, 0.25, 0.50, 0.75, 0.90 & 0.95
 * Lowest 5 values
 * Highest 5 values
 * Number of unique values
@@ -49,12 +49,10 @@ tBodyAccelerometermeanY
 
         n   missing    unique      Info      Mean       .05       .10       .25       .50       .75 
       180         0       180         1  -0.01795 -0.028812 -0.026989 -0.020058 -0.017262 -0.014936 
-     
       .90       .95 
 -0.011234 -0.008478 
 
-lowest : -0.040514 -0.033046 -0.032527 -0.032411 -0.032384
-highest: -0.006726 -0.005877 -0.005630 -0.003503 -0.001308 
+lowest : -0.040514 -0.033046 -0.032527 -0.032411 -0.032384, highest: -0.006726 -0.005877 -0.005630 -0.003503 -0.001308 
 
 ------------------------------------------------------------------------------------------------------------
 tBodyAccelerometermeanZ
