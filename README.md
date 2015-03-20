@@ -69,14 +69,14 @@ StandardDeviation, respectively
 
 ##POST SCRIPT TASKS
 ###Writing the table to a text file
-* To write the table into a text file, the following command was run- 
- write.table(dataMeanStd,file="dataMeanStd.txt",row.names=FALSE)
+* To write the table into a text file, the following command was run-
+* write.table(dataMeanStd,file="dataMeanStd.txt",row.names=FALSE)
 * The text file was created in the working directory
 
 ###Reading the table into R
 * To read the table into R, the following steps were taken-
 * The following command was run- dataMeanStdUploaded<-read.table("dataMeanStd.txt", sep=" ")
-* Click on spreadsheet icon next to the file in the Global environment section and the data frame will show up in the "script creating" window 
+* Click on spreadsheet icon next to the file in the Global environment section and the data frame will show up in the "script creation" window 
 
 ##ACKNOWLEDGEMENTS
 The data set used in the study was made possible by the following publication-
