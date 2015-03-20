@@ -16,26 +16,26 @@
 * Number of observations
 
 ##Numerical details of each variable
-* The details on the 81 variables were broken down into sets of 1-20, 21-40, 41-60 and 61-81
+* The details of the subject, activity and the 79 variables were broken down into sets of 1-20, 21-40, 41-60 and 61-81
 
 Variables 1-20,     180  Observations
 
 ------------------------------------------------------------------------------------------------------------
 subject
 
-      n missing  unique    Info
-    180       0      30       1 
+      n missing  unique    
+    180       0      30       
 
 lowest :  1  2  3  4  5, highest: 26 27 28 29 30 
 
 ------------------------------------------------------------------------------------------------------------
 activity
 
-      n missing  unique    Info
-    180       0       6    0.97 
+      n missing  unique   
+    180       0       6     
 
-Frequency 	30 30 30 30 30 30
-
+		1   2   3   4   5   6	
+Frequency 	30  30  30  30  30  30
 %  			      			17 17 17 17 17 17
 
 ------------------------------------------------------------------------------------------------------------
