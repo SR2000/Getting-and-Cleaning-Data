@@ -10,7 +10,6 @@
 * Unique values
 * Lowest 5 values
 * Highest 5 values
-* Missing values
 * Number of observations
 
 ##Numerical details of each variable
