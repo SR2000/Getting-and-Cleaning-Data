@@ -32,7 +32,7 @@ activity
       n missing  unique    Info
     180       0       6    0.97 
 
-			1  2  3  4  5  6
+		1  2  3  4  5  6
 Frequency 	30 30 30 30 30 30
 %         	17 17 17 17 17 17
 
