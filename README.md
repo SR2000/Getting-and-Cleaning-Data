@@ -1,3 +1,13 @@
+##ORIGINAL EXPERIMENT
+The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 subjects within an age bracket of 19-48 years, wearing a smartphone(Samsung Galaxy S II) on their waists. Gyroscope and acceleromter readings were taken while each subject was performing 6 activities(walking, walking upstairs, walking downstairs, sitting, standing and laying). A 561-feature vector with time and frequency domain variables for the measurements was created for every record in the table. The experiment divided the data collected into 2 data sets- training and test. 70 % of the subjects were placed in the training data set and the remaining 30 % in the test set
+
+##PROJECT REQUIREMENTS
+##A script, run_analysis.r was created that satisfied the following requirements.
+* Merges the test and training sets into one
+* Extracts only the mean and standard deviation for each measurement
+* Appropriately labels the column names and replace the activity ids with their descriptive names
+* Creates a final tidy set from the table created in the above step to contain only the means for every activity for evey subject
+
 ##SCRIPT DETAILS
 ###Downloading the file
 * The file was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zipand placed in the working directory
@@ -44,8 +54,6 @@ in their name were extracted
 * Columns in the full table with Acc,Gyro,Freq and std in their names were expanded to Accelerometer,Gyroscope,Frequency &
 StandardDeviation, respectively
 * Upper case in the column names were not changed to lower case since the long names with the same lower case would be rather confusing
-
-###Removing parentheses and "-" from the full table column names
 * Column names carrying "-" and the symbol for parentheses were modified to not have them using grepl()
 
 ###Re-adding the subject & activity columns to the full table
