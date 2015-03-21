@@ -10,7 +10,7 @@ The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 s
 
 ##SCRIPT DETAILS
 ###Downloading the file
-* The file was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zipand placed in the working directory
+* The file was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and placed in the working directory
 * The file was then unzipped and placed in the directory, "ds3" created in the working directory
 
 ###Creating the measurement column name table
