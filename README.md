@@ -47,8 +47,7 @@ StandardDeviation, respectively
 * The parentheses symbol and "-" were removed from the full table column names using grepl()
 
 ###Adding the subject & activity columns to the full table
-* Since the full table column name changes removed those columns not in the corresponding patterns, the subject-activity table had to be re-added to the full table
-* All measurement value columns in the full table were ensured to be numeric
+* The subject-activity table was added to the full table with the subject and activity columns in that order, concatenated at the beginning of the full table
 
 ###Renaming the activity ids with their labels
 * The activity ids in the full table were renamed with their names as defined in "\ds3\UCI HAR Dataset\activity_labels.txt"
