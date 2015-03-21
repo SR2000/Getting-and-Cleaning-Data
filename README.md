@@ -46,7 +46,7 @@ StandardDeviation, respectively
 * Upper case in the column names were not changed to lower case since the long names with the same lower case would be rather confusing
 * The parentheses symbol and "-" were removed from the full table column names using grepl()
 
-###Adding the subject & activity columns to the full table and ensuring the measurement columns in the full table are numeric
+###Adding the subject & activity columns to the full table
 * Since the full table column name changes removed those columns not in the corresponding patterns, the subject-activity table had to be re-added to the full table
 * All measurement value columns in the full table were ensured to be numeric
 
