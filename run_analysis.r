@@ -20,10 +20,7 @@
         act1_test<-read.table("ds3/UCI HAR Dataset/test/y_test.txt",as.is=TRUE)
         colnames(act1_test)<-c("activity")
         subj_act_test<-cbind(subj_test,act1_test)
-        
-        ##Creating the subject_activity-measurement table in the test set
-        test_full<-cbind(subj_act_test,test)
-        
+            
         ##Creating the measurement table in the training set
         train<-data.frame()
         train<-rbind(train,read.table("ds3/UCI HAR Dataset/train/X_train.txt",as.is=TRUE))
@@ -35,26 +32,15 @@
         act1_train<-read.table("ds3/UCI HAR Dataset/train/y_train.txt",as.is=TRUE)
         colnames(act1_train)<-"activity"
         subj_act_train<-cbind(subj_train,act1_train)
-        
-        ##Creating the subject_activity-measurement table in the training set
-        train_full<-cbind(subj_act_train,train)
-        
+                      
         ##Creating the full table with the test & training sets
-        dataFull<-rbind(test_full,train_full)
+        dataFull<-rbind(test,train)
                         
         ##Extracting the full table columns with mean and std in their names 
         strings<-c("mean","std")
         patt <- sub(',\\s','|',toString(strings))
         dataFull<-dataFull[,grepl(patt,colnames(dataFull))]
-        
-        #Renaming the activity ids with their labels
-        dataFull[dataFull[,2]==1,2]<-"WALKING"
-        dataFull[dataFull[,2]==2,2]<-"WALKING_UPSTAIRS"
-        dataFull[dataFull[,2]==3,2]<-"WALKING_DOWNSTAIRS"
-        dataFull[dataFull[,2]==4,2]<-"SITTING"
-        dataFull[dataFull[,2]==5,2]<-"STANDING"
-        dataFull[dataFull[,2]==6,2]<-"LAYING"
-                
+                       
         ##Modifying the columns names in the full table
         patt_acc<- sub(',\\s','|',toString("Acc"))
         patt_gyro<- sub(',\\s','|',toString("Gyro"))
@@ -67,17 +53,23 @@
         colnames(dataFull)<-gsub("-","",colnames(dataFull))
         colnames(dataFull)<-gsub("\\()","",colnames(dataFull))
                
-        ##Re-adding the subject & activity columns to the full table 
-        ##and ensuring the measurement columns in the full table are numeric
+        ##Adding the subject & activity columns to the full table 
         subj_act<-rbind(subj_act_test,subj_act_train)
         dataFull<-cbind(subj_act,dataFull)
-        suppressWarnings(dataFull[,3:81]<-sapply(dataFull[,3:81],as.numeric))
+                
+        #Renaming the activity ids with their labels
+        dataFull[dataFull[,2]==1,2]<-"WALKING"
+        dataFull[dataFull[,2]==2,2]<-"WALKING_UPSTAIRS"
+        dataFull[dataFull[,2]==3,2]<-"WALKING_DOWNSTAIRS"
+        dataFull[dataFull[,2]==4,2]<-"SITTING"
+        dataFull[dataFull[,2]==5,2]<-"STANDING"
+        dataFull[dataFull[,2]==6,2]<-"LAYING"
         
         ##Looping through all subjects to create the dataMeanStd table with grouped means
         dataMeanStd<-data.frame()
         for (i in 1:30){   
                 sub1<-subset(dataFull,dataFull$subject==i)
-                sub2<-aggregate(sub1[,3:81], by=list(sub1$subject,sub1$activity),mean, na.rm=TRUE)
+                sub2<-aggregate(sub1[,3:81], by=list(sub1$subject,sub1$activity),mean)
                 dataMeanStd<-rbind(dataMeanStd,sub2)
         }
                 
