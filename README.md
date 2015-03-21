@@ -24,9 +24,6 @@ The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 s
 * The subject and activity tables for the test set were created after reading from "ds3/UCI HAR Dataset/test/subject_test.txt" and "ds3/UCI HAR Dataset/test/y_test.txt", respectively
 * The columns of the 2 tables were concatenated to create the subject-activity table (columns= subject, activity) for the test set
 
-###Creating the subject_activity-measurement table in the test set
-* The columns of the subject-activity(test) table and the test table were concatenated to form a single subject-activity-test table
-
 ###Creating the measurement table in the training set
 * The training set was read in from ""ds3/UCI HAR Dataset/train/X_train.txt"" and the rows bound to the training table
 * The column names for the training table were extracted from the measurement column name table
@@ -34,9 +31,6 @@ The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 s
 ###Creating subject-activity table in the training set
 * The subject and activity tables for the training set were created after reading from "ds3/UCI HAR Dataset/train/subject_train.txt" and "ds3/UCI HAR Dataset/train/y_train.txt", respectively
 * The columns of the 2 tables were concatenated to create the subject-activity table (columns= subject, activity) for the training set
-
-###Creating the subject_activity-measurement table in the training set
-* The columns of the subject-activity(training) table and the training table were concatenated to form a single subject-activity-training table
 
 ###Creating the full table with the test & training sets
 * The rows of the test and the training tables, in that order, were concatenated to create the full table 
@@ -46,18 +40,18 @@ The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 s
 * The columns were not restricted to only those names without parentheses but rather all columns having mean and std anywhere
 in their name were extracted
 
-###Renaming the activity ids with their labels
-* The activity ids in the full table were renamed with their names as defined in "\ds3\UCI HAR Dataset\activity_labels.txt"
-
 ###Modifying the columns names in the full table
 * Columns in the full table with Acc,Gyro,Freq and std in their names were expanded to Accelerometer,Gyroscope,Frequency &
 StandardDeviation, respectively
 * Upper case in the column names were not changed to lower case since the long names with the same lower case would be rather confusing
 * The parentheses symbol and "-" were removed from the full table column names using grepl()
 
-###Re-adding the subject & activity columns to the full table
+###Adding the subject & activity columns to the full table and ensuring the measurement columns in the full table are numeric
 * Since the full table column name changes removed those columns not in the corresponding patterns, the subject-activity table had to be re-added to the full table
 * All measurement value columns in the full table were ensured to be numeric
+
+###Renaming the activity ids with their labels
+* The activity ids in the full table were renamed with their names as defined in "\ds3\UCI HAR Dataset\activity_labels.txt"
 
 ###Looping through all subjects to create the final table with grouped means
 * The full table was broken into 30 subsets (for 30 subjects) and the column means for every activity for each subset was calculated using aggregate()
