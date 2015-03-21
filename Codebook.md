@@ -16,7 +16,7 @@
 * The parentheses symbol and "-" were removed from all column names
 
 ##Measurement units
-* The units for the accelerometer and gyroscope readings are unstated and can only be expected to be metres/(sec x sec) and radians/sec, respectively
+* The units for the accelerometer and gyroscope readings were unstated and can only be expected to be metres/(sec x sec) and radians/sec, respectively
 
 ##Values presented in the codebook for each measurement variable
 * Mean
