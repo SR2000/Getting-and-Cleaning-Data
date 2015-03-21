@@ -1,5 +1,5 @@
 ##Overview
-* There are 180 rows with 81 variables
+* There were 180 rows with 81 variables
 * Out of the 81 variables, the first variable was the subject id, the second one is the activity that each subject underwent and the remaining 79 are measurement values collected/derived in the experiment
 * There were 30 subjects and 6 activities resulting in 180 rows of mean/activity/subject
 * There were no missing values for any variable in the final data frame
