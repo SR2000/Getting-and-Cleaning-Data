@@ -17,7 +17,7 @@ The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 s
 * The measurement column name table was created by reading the features from "ds3/UCI HAR Dataset/features.txt"
 
 ###Creating the measurement table in the test set
-* The test set was read in from "ds3/UCI HAR Dataset/test/X_test.txt" and the rows bound to the test table
+* The test set was read in from "ds3/UCI HAR Dataset/test/X_test.txt" and the rows bound to the "test" table
 * The column names for the test table was extracted from the measurement column name table
 
 ###Creating subject-activity table in the test set
@@ -25,7 +25,7 @@ The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 s
 * The columns of the 2 tables were concatenated to create the subject-activity table (columns= subject, activity) for the test set
 
 ###Creating the measurement table in the training set
-* The training set was read in from ""ds3/UCI HAR Dataset/train/X_train.txt"" and the rows bound to the training table
+* The training set was read in from "ds3/UCI HAR Dataset/train/X_train.txt" and the rows bound to the "training" table
 * The column names for the training table were extracted from the measurement column name table
 
 ###Creating subject-activity table in the training set
@@ -37,8 +37,7 @@ The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 s
 
 ###Extracting the full table columns with mean and std in their names
 * All columns with mean and std in the full table column names were extracted using grepl() and passing the required pattern
-* The columns were not restricted to only those names without parentheses but rather all columns having mean and std anywhere
-in their name were extracted
+* The columns included all matched names containing parentheses as well
 
 ###Modifying the columns names in the full table
 * Columns in the full table with Acc,Gyro,Freq and std in their names were expanded to Accelerometer,Gyroscope,Frequency &
