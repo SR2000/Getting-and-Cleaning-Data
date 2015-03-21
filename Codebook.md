@@ -7,6 +7,7 @@
 ##Transformations/Conversions
 ###Data
 * No transformation was performed on the variable values since none of the data was found to be inconsistent with the process to be done on them
+
 ###Variable names
 * "Acc" in all column names was replaced with "Accelerometer"
 * "Gyro" in all column names was replaced with "Gyroscope"
@@ -15,7 +16,7 @@
 * The parentheses symbol and "-" were removed from all column names
 
 ##Measurement units
-###The units for the accelerometer and gyroscope readings are unstated and can only be expected to be metres/sec^2 and radians/sec, respectively
+* The units for the accelerometer and gyroscope readings are unstated and can only be expected to be metres/sec^2 and radians/sec, respectively
 
 ##Values presented in the codebook for each measurement variable
 * Mean
