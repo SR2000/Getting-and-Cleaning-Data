@@ -4,8 +4,7 @@
         fileUrl<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
         download.file(fileUrl,destfile="courseProject.zip")
         unzip("courseProject.zip",exdir="ds3")
-        file<-list.files("ds3/",full.names=TRUE)
-        
+                
         ##Creating the measurement column name table
         cols<-read.table("ds3/UCI HAR Dataset/features.txt",as.is=TRUE)
                 
