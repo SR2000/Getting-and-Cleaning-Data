@@ -42,7 +42,7 @@ The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 s
 ###Modifying the columns names in the full table
 * Acc,Gyro,Freq and std in the column names were expanded to Accelerometer,Gyroscope,Frequency &
 StandardDeviation, respectively
-* Upper case in the column names were not changed to lower case since the long names with the same lower case would be rather confusing
+* Upper case in the column names were not changed to lower case since the long names with only lower case would be rather confusing
 * The parentheses symbol and "-" were removed from the full table column names using grepl()
 
 ###Adding the subject & activity columns to the full table
