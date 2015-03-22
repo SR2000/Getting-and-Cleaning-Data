@@ -1,12 +1,16 @@
 ##Overview
-* There were 180 rows with 81 variables
-* Out of the 81 variables, the first variable was the subject id, the second one is the activity that each subject underwent and the remaining 79 are measurement values collected/derived in the experiment
-* There were 30 subjects and 6 activities resulting in 180 rows of mean/activity/subject
-* There were no missing values for any variable in the final data frame
+* The raw table that combined the testing and training tables along with the subject id and the activity had 10299 rows and 563 variables
+* There were 30 subjects and 6 activities
+* The final table had 180 rows with 81 variables
+* Out of the 81 variables, the first variable was the subject id, the second one was the activity that each subject underwent and the remaining 79 were measurement values collected/derived in the experiment
+* There were no missing values for any variable in the final table
 
-##Transformations/Conversions
+##Transformations/Extractions/Conversions
 ###Data
-* No transformation was performed on the variable values since none of the data was found to be inconsistent with the process to be done on them
+* No transformation on the variable values was deemed necessary since none of the data was found to be inconsistent with the process to be done on them
+
+###Extractions
+* All columns containing "mean" and "std" in their names were extracted for creation of the final table
 
 ###Variable names
 * "Acc" in all column names was replaced with "Accelerometer"
