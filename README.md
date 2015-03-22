@@ -40,13 +40,13 @@ The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 s
 * The columns included all matched names containing parentheses as well
 
 ###Modifying the columns names in the full table
-* Columns in the full table with Acc,Gyro,Freq and std in their names were expanded to Accelerometer,Gyroscope,Frequency &
+* Acc,Gyro,Freq and std in the column names were expanded to Accelerometer,Gyroscope,Frequency &
 StandardDeviation, respectively
 * Upper case in the column names were not changed to lower case since the long names with the same lower case would be rather confusing
 * The parentheses symbol and "-" were removed from the full table column names using grepl()
 
 ###Adding the subject & activity columns to the full table
-* The subject-activity table was added to the full table with the subject and activity columns in that order, concatenated at the beginning of the full table
+* The subject-activity table was added to the full table with the subject and activity columns at the beginning of the full table
 
 ###Renaming the activity ids with their labels
 * The activity ids in the full table were renamed with their names as defined in "\ds3\UCI HAR Dataset\activity_labels.txt"
