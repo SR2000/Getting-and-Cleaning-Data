@@ -1,18 +1,19 @@
 ##Overview
 * The raw table that combined the measurement variables for the testing and training sets had 10299 rows and 561 variables
+* The raw table that combined the subjects and activities had 10299 rows and 2 variables
 * There were 30 subjects and 6 activities for every subject
 * The final table had 180 rows with 81 variables
 * Out of the 81 variables, the first variable was the subject id, the second one was the activity that each subject underwent and the remaining 79 were measurement values collected/derived in the experiment
 * There were no missing values for any variable in the final table
 
 ##Transformations/Extractions/Conversions
-###Data
+###Data transformation
 * No transformation on the variable values was deemed necessary since none of the data was found to be inconsistent with the process to be done on them
 
-###Extractions
+###Column extraction
 * All columns containing "mean" and "std" in their names were extracted for creation of the final table
 
-###Variable names
+###Variable name conversion
 * "Acc" in all column names was replaced with "Accelerometer"
 * "Gyro" in all column names was replaced with "Gyroscope"
 * "Freq" in all column names was replaced with "Frequency"
