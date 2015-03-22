@@ -6,7 +6,7 @@ The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 s
 * Merges the test and training sets into one
 * Extracts only the mean and standard deviation for each measurement
 * Appropriately labels the column names and replace the activity ids with their descriptive names
-* Creates a final tidy set from the table created in the above step to contain only the means for every activity for evey subject
+* Creates a final tidy set from the table created with the above steps to contain only the means for every activity for evey subject
 
 ##SCRIPT DETAILS
 ###Downloading the file
@@ -35,14 +35,14 @@ The experiment carried out by Jorge L. Reyes-Ortiz & co. was conducted with 30 s
 ###Creating the full table with the test & training sets
 * The rows of the test and the training tables, in that order, were concatenated to create the full table 
 
-###Extracting the full table columns with mean and std in their names
+###Extracting the required full table columns
 * All columns with mean and std in the full table column names were extracted using grepl() and passing the required pattern
 * The columns included all matched names containing parentheses as well
 
 ###Modifying the columns names in the full table
 * Acc,Gyro,Freq and std in the column names were expanded to Accelerometer,Gyroscope,Frequency &
 StandardDeviation, respectively
-* Upper case in the column names were not changed to lower case since the long names with only lower case would be rather confusing
+* Upper case in the column names were not changed to lower case since the long names with only lower case would be a bit hard to read
 * The parentheses symbol and "-" were removed from the full table column names using gsub()
 
 ###Adding the subject & activity columns to the full table
@@ -64,11 +64,11 @@ StandardDeviation, respectively
 * write.table(dataMeanStd,file="dataMeanStd.txt",row.names=FALSE)
 * The text file was created in the working directory
 
-###Reading and running tasks by an external participant
+###Table reading and script running tasks by an external participant
 ####Reading the table into R
 * To read the table into R from the course evaluation page, the following steps were taken-
 * The file was opened in the "Preview" mode and saved from the internet into the working directory with the file name "dataMeanStd.txt"
-* The following command was run- dataMeanStdUploaded<-read.table("dataMeanStd.txt", sep=" ")
+* The following command was run in R Studio- dataMeanStdUploaded<-read.table("dataMeanStd.txt", sep=" ")
 * The spreadsheet icon next to the file name in the Global environment section was clicked and the data frame showed up in the "script creation" window
 
 ####Running the Github repository script locally
