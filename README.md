@@ -68,7 +68,7 @@ StandardDeviation, respectively
 ####Reading the table into R
 * To read the table into R from the course evaluation page, the following steps were taken-
 * The file was opened in the "Preview" mode and saved from the internet into the working directory with the file name "dataMeanStd.txt"
-* The following command was run in R Studio-dataMeanStdUploaded<-read.table("dataMeanStd.txt", sep=" ")
+* The following command was run in RStudio- dataMeanStdUploaded<-read.table("dataMeanStd.txt", sep=" ")
 * The spreadsheet icon next to the file name in the Global environment section was clicked and the data frame showed up in the "script creation" window
 
 ####Running the Github repository script locally
