@@ -3,7 +3,7 @@
 * The raw table that combined the subjects and activities had 10299 rows and 2 variables
 * There were 30 subjects and 6 activities for every subject
 * The final table had 180 rows with 81 variables
-* Out of the 81 variables, the first variable was the subject id, the second one was the activity that each subject underwent and the remaining 79 were measurement values collected/derived in the experiment
+* Out of the 81 variables, the first variable was the subject id, the second one was the activity that each subject underwent and the remaining 79 were measurement values collected/derived from the accelerometer/gyroscope readings in the experiment
 * There were no missing values for any variable in the final table
 
 ##Transformations/Extractions/Conversions
